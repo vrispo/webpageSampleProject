@@ -4,9 +4,27 @@ SlideShow();
 
 //  images controls
 function currentSlide(n) {
-  slidePosition = n-1;
-  clearTimeout(timer);
-  SlideShow();
+    slidePosition = n-1;
+    clearTimeout(timer);
+    SlideShow();
+}
+
+function unfade() {
+    var op = 0.1;  // initial opacity
+    var slides = document.getElementsByClassName("Containers");
+    var circles = document.getElementsByClassName("dots");
+    
+    slides[slidePosition-1].style.opacity = op;
+    slides[slidePosition-1].style.display = 'block';
+    circles[slidePosition-1].className += " enable";
+    var timer_unfade = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer_unfade);
+        }
+        slides[slidePosition-1].style.opacity = op;
+        slides[slidePosition-1].style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 50);
 }
 
 function SlideShow() {
@@ -24,8 +42,7 @@ function SlideShow() {
     slidePosition++;
     if (slidePosition > slides.length) {slidePosition = 1}
 
-    slides[slidePosition-1].style.display = "block";
-    circles[slidePosition-1].className += " enable";
-
+    unfade();
+    
     timer = setTimeout(SlideShow, 5000); // Change image every 5 seconds
 } 
