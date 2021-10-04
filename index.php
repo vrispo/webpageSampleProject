@@ -54,14 +54,26 @@
                 </div>               
             </div>
             <br>
-
-            <!-- The circles/dots -->
-<!--        <div style="text-align:center">
-                <span class="dots" onclick="currentSlide(1)"></span>
-                <span class="dots" onclick="currentSlide(2)"></span>
-                <span class="dots" onclick="currentSlide(3)"></span>
-            </div> 
--->
+            <div class="table-container">
+                <form name="explore" action="" method="post">
+                    <div class="location-textform">
+                        <label for="location">Where You Want to go</label>
+                        <input type="text" id="location" value="Search your location">
+                    </div>
+                    <div class="datein-textform">
+                        <label for="datein">Check-in</label>
+                        <input type="text" id="datein" value="Add Date">
+                    </div>
+                    <div class="dateout-textform">
+                        <label for="dateout">Check-out</label>
+                        <input type="text" id="dateout" value="Add Date">
+                    </div>
+                    <div class="buttonform">
+                        <input type="button" id="explorebutton" value="Explore Now">
+                    </div>                   
+                </form>              
+            </div>
+            
         </div>
                
         <div id ="pie"> 
