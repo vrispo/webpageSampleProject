@@ -29,21 +29,19 @@
             <!-- Slideshow container -->
             <div class="slideshow-container fade">
                 <!-- Full images with numbers and message Info -->
-                <div class="Containers">
+                <div class="Containers" style="background-image: url('./Images/image1.jpg')">
                     <div class="MessageInfo">travel to explore</div>
-                    <img src="./Images/image1.jpg" style="width:100%">
+                    <!-- <img src="./Images/image1.jpg" style="width:100%"> -->
                     <div class="Info">First Caption</div>
                 </div>
 
-                <div class="Containers">
+                <div class="Containers" style="background-image: url('./Images/image2.jpg')">
                     <div class="MessageInfo">travel to explore</div>
-                    <img src="./Images/image2.jpg" style="width:100%">
                     <div class="Info">Second Caption</div>
                 </div>
 
-                <div class="Containers">
+                <div class="Containers" style="background-image: url('./Images/image3.jpg')">
                     <div class="MessageInfo">travel to explore</div>
-                    <img src="./Images/image3.jpg" style="width:100%">
                     <div class="Info">Third Caption</div>
                 </div>
                 <!-- The circles/dots -->
