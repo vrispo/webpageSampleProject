@@ -5,7 +5,7 @@
 */
 body{
     max-width: 1786px;
-    min-width: 995px;
+    min-width: 1200px;
 }
 
 a{
@@ -213,6 +213,7 @@ a{
   to {opacity: 2}
 }
 
+/* SEZIONE TABLE CONTAINER CSS*/
 .table-container{
     position: relative;
     text-align: center;
@@ -323,4 +324,62 @@ input, label {
     color: #FFFFFF;
     border-style: hidden;
     border-radius: 10px;
+}
+
+/* SEZIONE INFO CSS*/
+.info-container{
+    width: 100%;
+    text-align: center;
+}
+.info-box{
+    display: inline-block;
+    width: 20%;
+    max-width: 369px;
+    height: 293.4px;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow:  1px 1px 20px #E5E9F6 ,-1px -1px 20px #E5E9F6;
+    border-radius: 10px;
+}
+
+.info-img{
+    width: 103px;
+    height: 97px;
+    border-radius: 15px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto; /* Resize the background image to cover the entire container */
+    background-color: #EBF0FE;
+    margin-left: 26px;
+    margin-top: 26px;
+}
+
+.info-title p{
+    color: #0F0F0F;
+    font-family: "Raleway";
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px 2px 0px 26px;
+}
+
+.info-text p{
+    color: #0F0F0F;
+    font-family: "Raleway";
+    font-size: 12pt;
+    text-align: left;
+    margin: 2px 2px 0px 26px;
+}
+
+/*SECTION DESTINATION*/
+.destination-container{
+    width: 100%;
+    text-align: center;
+}
+
+.destination-title{
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 40pt;
+    font-weight: bold;
 }
