@@ -1,0 +1,99 @@
+/* 
+    Created on : 6 ott 2021, 13:53:42
+    Author     : veron
+*/
+.datein-picker{
+    background-color: #fff;
+    cursor: pointer;
+    user-select:none;
+  
+    border: none;
+    height: 24px;
+    width: 82.2px;
+    margin-left: 2px;
+    
+    font-family: "Raleway";
+    font-size: 10pt;
+    color: #7E7E7E;
+}
+
+.dateout-picker{
+    background-color: #fff;
+    cursor: pointer;
+    user-select:none;
+  
+    border: none;
+    height: 24px;
+    width: 95px;
+    margin-left: 2px;
+    
+    font-family: "Raleway";
+    font-size: 10pt;
+    color: #7E7E7E;
+}
+
+.datein-picker:hover ,.dateout-picker:hover{
+    background-color: #f3f3f3;
+}
+
+.datein-picker .dates, .dateout-picker .dates{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1; /* Sit on top */
+}
+
+.datein-picker .selected-date, .dateout-picker .selected-date{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datein-picker .dates:active, .dateout-picker .dates:active{
+    display: block;
+}
+
+.datein-picker .dates .month, .dateout-picker .dates .month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #EEE;
+}
+
+.datein-picker .dates .month .arrows, .dateout-picker .dates .month .arrows{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    font-size: 20px;
+}
+.datein-picker .dates .month .arrows:hover, .dateout-picker .dates .month .arrows:hover{
+    background-color: #e3e3e3;
+}
+.datein-picker .dates .month .arrows:active, .dateout-picker .dates .month .arrows:active{
+    background-color: #00ca85;
+}
+
+.datein-picker .dates .days, .dateout-picker .dates .days{
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.datein-picker .dates .days .day, .dateout-picker .dates .days .day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+}
+
+.datein-picker .dates .days .day:hover, .dateout-picker .dates .days .day:hover{
+    background-color: #e3e3e3;
+}

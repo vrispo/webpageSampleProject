@@ -217,6 +217,7 @@ a{
 .table-container{
     position: relative;
     text-align: center;
+    margin: 10px;
 }
 .table-container form{
     width: 876px;
@@ -248,13 +249,13 @@ input, label {
     height: 54.88px;
 }
 
-.location-textform label, .datein-textform label, .dateout-textform label{
+.location-textform label, .datein-label, .dateout-label{
     font-family: "Raleway";
     font-size: 12pt;
     color: #151515;
 }
 
-.location-textform input, .datein-textform input, .dateout-textform input{
+.location-textform input, .dateout-textform input{
     font-family: "Raleway";
     font-size: 10pt;
     color: #7E7E7E;
@@ -279,11 +280,10 @@ input, label {
     border-width: 1px;
 }
 
-.datein-textform input,.datein-textform label{
+.datein-label{
     border: none;
     height: 24px;
     width: 82.2px;
-    margin-left: 47.5px;
 }
 
 .dateout-textform{
@@ -295,11 +295,10 @@ input, label {
     height: 54.88px;
 }
 
-.dateout-textform input,.dateout-textform label{
+.dateout-label{
     border: none;
     height: 24px;
     width: 95px; 
-    margin-left: 47.5px;
 }
 
 .buttonform{
@@ -328,47 +327,44 @@ input, label {
 
 /* SEZIONE INFO CSS*/
 .info-container{
-    width: 100%;
     text-align: center;
+    margin: 20px;
 }
 .info-box{
-    display: inline-block;
-    width: 20%;
+    margin:20px;
+    padding: 26px  5px 0px 26px;
     max-width: 369px;
+    min-width: 184.5px;
+    width: 20%;
+    display: inline-block;
+    text-align: left;
     height: 293.4px;
-    margin-left: 2%;
-    margin-right: 2%;
-    box-shadow:  1px 1px 20px #E5E9F6 ,-1px -1px 20px #E5E9F6;
-    border-radius: 10px;
+    box-shadow:  1px 1px 20px #E5E9F6 ,-1px -1px 20px #E5E9F6 ,
+    -1px 1px 20px #E5E9F6 ,1px -1px 20px #E5E9F6;
+    border-radius: 10px;  
+    font-family: "Raleway";
+    color: #0F0F0F;
 }
 
 .info-img{
     width: 103px;
     height: 97px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: auto; /* Resize the background image to cover the entire container */
     background-color: #EBF0FE;
-    margin-left: 26px;
-    margin-top: 26px;
 }
 
-.info-title p{
-    color: #0F0F0F;
-    font-family: "Raleway";
+.info-title{
     font-size: 16pt;
     font-weight: bold;
-    text-align: left;
-    margin: 5px 2px 0px 26px;
+    margin-top: 5px;
 }
 
-.info-text p{
-    color: #0F0F0F;
-    font-family: "Raleway";
+.info-text{
     font-size: 12pt;
-    text-align: left;
-    margin: 2px 2px 0px 26px;
+    margin-top: 10px;
 }
 
 /*SECTION DESTINATION*/
