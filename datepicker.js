@@ -10,6 +10,11 @@ var selectedDay = day;
 var selectedMonth = month;
 var selectedYear = year;
 
+var selectedDateOUT = date;
+var selectedDayOUT = day;
+var selectedMonthOUT = month;
+var selectedYearOUT = year;
+
 var active = 0;
 
 //FUNCTIONS
@@ -19,8 +24,13 @@ function toggleDatePicker(e, picker){
     if(active == 0){
         active = 1;
         dates_element.style.display="block";
-        month = date.getMonth();
-        year = date.getFullYear();
+        if(picker == 'datein-picker'){
+            month = selectedDate.getMonth();
+            year = selectedDate.getFullYear();
+        }else{
+            month = selectedDateOUT.getMonth();
+            year = selectedDateOUT.getFullYear();            
+        }
         mth_element.textContent = months[month] + ' ' + year;
         populateDates(picker);
     }else{
@@ -86,17 +96,26 @@ function populateDates(picker){
            day_element.style.backgroundColor = "#00ca85";
        } 
        
-       day_element.addEventListener('click',function(e){          
-            selectedDate = new Date(year,month,e.target.textContent);
-            selectedDay = e.target.textContent;
-            selectedMount = month;
-            selectedYear = year;
-            selected_date_element.textContent = selectedDay + '/' + (selectedMount+1) + '/' + selectedYear;
-            selected_date_element.dataset.value = selectedDate;
+       day_element.addEventListener('click',function(e){ 
+            if(picker == 'datein-picker'){
+                selectedDate = new Date(year,month,e.target.textContent);
+                selectedDay = e.target.textContent;
+                selectedMount = month;
+                selectedYear = year;
+                selected_date_element.textContent = selectedDay + '/' + (selectedMount+1) + '/' + selectedYear;
+                selected_date_element.dataset.value = selectedDate;
+            }else{
+                selectedDateOUT = new Date(year,month,e.target.textContent);
+                selectedDayOUT = e.target.textContent;
+                selectedMountOUT = month;
+                selectedYearOUT = year;
+                selected_date_element.textContent = selectedDayOUT + '/' + (selectedMountOUT+1) + '/' + selectedYearOUT;
+                selected_date_element.dataset.value = selectedDateOUT;           
+            }
             populateDates(picker); 
             //NON FUNZIONA (on click nasconde il calendario)
             active = 0;
-            dates_element.style.display="none";  
+            dates_element.style.display="none"; 
        });
        
        days_element.appendChild(day_element);
