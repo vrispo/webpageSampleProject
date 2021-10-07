@@ -1,0 +1,59 @@
+.cities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    width: 100%;
+}
+
+.cities .city{
+    text-align: center;
+    margin: 1px;
+    padding: 15px;
+}
+
+.city .image{
+    width: 100%;
+    height: 398px;
+    background-image: url("./Images/Singapore.png");
+    border-radius: 20px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.city .name{
+    color: #163235;
+    font-family: "Raleway";
+    font-size: 38px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.city .description{
+    color: #163235;
+    font-family: "Raleway";
+    font-size: 26px;
+    text-align: left;
+}
+
+.city .servizi , .city .costo , .city .dist , .city .tempo{
+    display: inline-block;
+    width: 50%
+}
+
+.city .dist , .city .tempo{
+    font-family: "Roboto";
+    font-size: 22px;
+}
+
+.city .costo{
+    font-family: "Roboto";
+    font-size: 31px;
+}
+
+.city .servizi , .city .dist{
+    text-align: left;
+}
+
+.city .costo , .city .tempo{
+    text-align: right;
+}

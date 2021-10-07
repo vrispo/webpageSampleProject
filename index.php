@@ -7,10 +7,19 @@
         <script src="slider.js"></script>        
         <link rel="stylesheet" href="datepickercss.css"/>
         <script src="datepicker.js"></script>
+        <link rel="stylesheet" href="destination.css"/>
+        <script src="destination.js"></script>
+        
+        <script language="javascript">
+            function start(){
+                SlideShow();
+                initTab();
+            }
+        </script>
         
         <title>Proto Web site Test</title>
     </head>
-    <body onload="SlideShow()">
+    <body onload="start()">
         <div id ="barra"> 
             <div id="bartitle">
                 <img src="./Images/globe.png" alt="globe"/>
@@ -123,20 +132,25 @@
         
             <div class="destination-container">
                 <div class="destination-title">Recommended Destination</div>
-            </div>
-            
-            <!-- comment <div class="date-picker" onclick="toggleDatePicker(event)">
-                <div class="selected-date"">Add Date</div>
-                <div class="dates">
-                    <div class="month">
-                        <div class="arrows prev-mth" onclick="goToPrevMonth()">&lt;</div>
-                        <div class="mth"></div>
-                        <div class="arrows next-mth" onclick="goToNextMonth()">&gt;</div>
-                    </div>
-                    <div class="days">
-                    </div>
+                <div id="navigation">
+                    <ul>
+                    <li>
+                        <div onclick="switchTabInIframe(event)" ;>Asia</div>
+                    </li>
+                    <li>
+                        <div onclick="switchTabInIframe(event)">Europa</div>
+                    </li>
+                    <li>
+                        <div onclick="switchTabInIframe(event)">Africa</div>
+                    </li>
+                    <li>
+                        <div onclick="switchTabInIframe(event)">America</div>
+                    </li>
+                    </ul>
                 </div>
-            </div>-->
+                
+                <div class="cities"></div>
+            </div>
             
         </div>      
         <div id ="pie"> 
