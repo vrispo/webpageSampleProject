@@ -168,6 +168,45 @@
                 </div>
                 </div>
             </div>
+            
+            <div class="clients">
+                <div class="client-title">Clients</div>
+                <div class='clients-container'>
+                    <div class="client-left">
+                        <div class='left'></div>
+                        <div class='right'>
+                            <div class="descr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget felis eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim. Risus pretium quam vulputate dignissim suspendisse in. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Risus sed vulputate odio ut enim blandit volutpat maecenas. Netus et malesuada fames ac turpis egestas. Sed arcu non odio euismod lacinia at quis risus sed. Praesent elementum facilisis leo vel fringilla est ullamcorper. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit pellentesque habitant morbi tristique senectus et netus.
+Morbi tincidunt augue interdum velit.
+                            </div>
+                            <div class="client">
+                                <div class="client-img"></div>
+                                <div class="client-descr">
+                                    <div class='name'>Mario Rossi</div>
+                                    <div class='mans'>Manager</div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="client-right">
+                        <div class='left'></div>
+                        <div class='right'>
+                            <div class="descr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget felis eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed. Viverra ipsum nunc aliquet bibendum enim. Risus pretium quam vulputate dignissim suspendisse in. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Risus sed vulputate odio ut enim blandit volutpat maecenas. Netus et malesuada fames ac turpis egestas. Sed arcu non odio euismod lacinia at quis risus sed. Praesent elementum facilisis leo vel fringilla est ullamcorper. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit pellentesque habitant morbi tristique senectus et netus.
+Morbi tincidunt augue interdum velit.
+                            </div>
+                            <div class="client">
+                                <div class="client-img"></div>
+                                <div class="client-descr">
+                                    <div class='name'>Luca Verdi</div>
+                                    <div class="mans">Developer</div>                                    
+                                </div>                                
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>           
+            
         </div>      
         <div id ="pie"> 
             <div id="pierights">
