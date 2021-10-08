@@ -152,6 +152,22 @@
                 <div class="cities"></div>
             </div>
             
+            <div class="blogs">
+                <div class="blog-title">Blogs</div>
+                <div class='blogs-container'>
+                <div class="blog-left" onclick="location.href='https://www.nomadicmatt.com/travel-blogs/hiking-kilimanjaro-guide/';">
+                    <div>The Ultimate Guide to Climbing Mount Kilimangiaro</div>
+                </div>
+                <div class="blog-right">
+                    <div class="up" onclick="location.href='https://www.nuflit.com/blog/guides/12-things-i-d-tell-any-new-traveller';">
+                        <div>12 Thinghs I'd Tell Any New Traveler</div>
+                    </div>
+                    <div class="down" onclick="location.href='https://www.nomadicmatt.com/travel-blogs/solo-female-travel-packing-guide/';">
+                        <div>The Ultimate Packing List for Female Travelers</div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>      
         <div id ="pie"> 
             <div id="pierights">

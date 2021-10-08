@@ -420,3 +420,105 @@ div#navigation li div{
 div#navigation li div:hover{
     background-color: #f0f0f0;
 }
+
+/*BLOG CONTAINER*/
+.blogs{
+    margin-top: 177.52px;
+    width: 100%;
+    height: 708px;
+    position: relative;
+}
+
+.blogs .blog-title{
+    color: #000000;
+    font-family: "Raleway";
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.blogs .blogs-container{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    background: #fff;
+    height: 587px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.blogs .blogs-container .blog-left{
+    position: absolute;
+    left: 0px;
+    height: 587px;
+    max-width: 965px;
+    width: 49%;
+    background-image: url("./Images/Mt_Kilimanjaro.jpg");
+    border-radius: 10px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.blogs .blogs-container .blog-left div{
+    width: 444px;
+}
+
+.blogs-container .blog-right{
+    position: absolute;
+    right: 0px;
+    max-width: 785px;
+    width: 49%;
+    height: 587px;
+    
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.blogs-container .blog-right .up{
+    height: 277px;
+    background-image: url("./Images/new_traveler.jpg");
+    border-radius: 10px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs-container .blog-right .up div{
+    width: 346px;
+}
+
+.blogs-container .blog-right .down{
+    margin-top: 33px;
+    height: 277px;
+    background-image: url("./Images/female_traveler.jpg");
+    border-radius: 10px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs-container .blog-right .down div{
+    width: 468px;
+}
