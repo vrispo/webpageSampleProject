@@ -385,6 +385,12 @@ div#navigation li div:hover{
     background-color: #f0f0f0;
 }
 
+.destination-container iframe{
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+
 /*BLOG CONTAINER*/
 .blogs{
     margin-top: 177.52px;
