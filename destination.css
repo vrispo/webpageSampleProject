@@ -13,7 +13,7 @@
 .city .image{
     width: 100%;
     height: 398px;
-    background-image: url("./Images/Singapore.png");
+    /*background-image: url("./Images/Singapore.png");*/
     border-radius: 20px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
